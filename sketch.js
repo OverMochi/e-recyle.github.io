@@ -31,7 +31,7 @@ function draw() {
   rect(21, 634, 156, 156, 16);
   rect(197, 634, 156, 156, 16);
 
-  img = createImg('assets/Plastics.png').parent(link);
+  img = createImg('Plastics.png').parent(link);
   img.position(21, 106);
   img.size(156,156);
 
