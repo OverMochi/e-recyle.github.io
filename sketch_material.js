@@ -1,11 +1,14 @@
 var img1;
 var medFont, regFont, semiFont;
-var image1;
+var image1, image2, image3, image4;
 var icon1;
 var bar;
 var logo;
 function preload(){
   image1 = loadImage('cups.png');
+  image2 = loadImage('papercup.png');
+  image3 = loadImage('styrofoam.png');
+  image4 = loadImage('metal.png');
   icon1 = loadImage('menu.png');
   bar = loadImage('status_bar.png');
   logo = loadImage('e-recycle.png');
@@ -52,6 +55,10 @@ function draw() {
   text('PAPER', 240, 373,63,20);
   text('STYROFOAM', 45, 546,116,20);
   text('METAL', 240, 546,63,20);
+  
+  image(image2,244,290,55,67);
+  image(image3,81,475,44,53);
+  image(image4,249,474,45,54);
 
 
   img = createImg('cups.png').parent(link);
