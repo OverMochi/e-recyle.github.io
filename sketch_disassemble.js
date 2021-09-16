@@ -64,6 +64,14 @@ function draw() {
   image(image1,64,323,59,60);
   image(image2,60,514,68,24);
   image(image3,80,668,27,61);
+  
+  textSize(17)
+  fill(128);
+  textFont(medFont);
+  textAlign(LEFT);
+  text('PET (polyethylene terephthalate) :completely recyclable', 215, 299,123,137);
+  text('PET (polyethylene terephthalate) :completely recyclable', 215, 472,123,137);
+  text('PP (Polypro -pylene): completely recyclable', 215, 657,117,104);
 
 
   img = createImg('nextstep.png').parent(link);
