@@ -1,39 +1,62 @@
+var medFont, regFont, semiFont;
+var image2, image3, image4, image5;
+var icon1;
+var bar;
+var logo;
+function preload(){
+  image2 = loadImage('takeout.png');
+  icon1 = loadImage('menu.png');
+  bar = loadImage('status_bar.png');
+  logo = loadImage('e-recycle.png');
+  medFont = loadFont('Montserrat-Medium.ttf');
+  regFont = loadFont('Montserrat-Regular.ttf');
+  semiFont = loadFont('Montserrat-SemiBold.ttf');
+  //image3 = loadImage('');
+  //image4 = loadImage('');
+  //image5 = loadImage('');
+}
+
 function setup() {
   // put setup code here
-  createCanvas(375, 812);
+  createCanvas(375, 966);
   link = createA('item.html', '');
 }
 
 function draw() {
   // put drawing code here
-  background(141);
-  fill(190);
+  background(237,237,237);
+  fill(0,163,153);
   noStroke();
-  rect(0, 0, 375, 80);
-  textSize(36)
-  textStyle(BOLD);
+  rect(0, 0, 375, 133);
+  image(bar,0,0,375,45);
+  image(logo,87,75,202,28);
+  image(icon1,24,73,30,30);
+
+  textSize(20)
+  fill(128);
+  textFont(medFont);
+  textAlign(CENTER);
+  text('Choose the category you would like to dispose:', 48, 178,280,54);
+
   fill(255);
-  textFont('SF Pro Display');
-  text('Recylce', 20, 50);
-  fill(255);
-  rect(307, 23, 48, 8, 8);
-  rect(307, 36, 48, 8, 8);
-  rect(307, 49, 48, 8, 8);
-  fill(196);
-  stroke(128, 128, 128);
-  strokeWeight(4);
-  rect(21, 106, 156, 156, 16);
-  rect(197, 106, 156, 156, 16);
-  rect(21, 282, 156, 156, 16);
-  rect(197, 282, 156, 156, 16);
-  rect(21, 458, 156, 156, 16);
-  rect(197, 458, 156, 156, 16);
-  rect(21, 634, 156, 156, 16);
-  rect(197, 634, 156, 156, 16);
+  rect(30, 259, 147, 147, 15);
+  rect(198, 259, 147, 147, 15);
+  rect(30, 434, 147, 147, 15);
+  rect(198, 434, 147, 147, 15);
+  rect(30, 609, 147, 147, 15);
+  rect(198, 609, 147, 147, 15);
+  rect(30, 784, 147, 147, 15);
+  rect(198, 784, 147, 147, 15);
 
-  img = createImg('https://raw.githubusercontent.com/OverMochi/werecyle.github.io/main/Plastics.png').parent(link);
-  img.position(21, 106);
-  img.size(156,156);
+  image(image2,238,313,67,34);
 
+  textSize(18)
+  fill(128);
+  textFont(medFont);
+  text('CUPS', 78, 373,51,20);
+  text('TAKE OUT', 226, 373,98,20);
 
+  img = createImg('cups.png').parent(link);
+  img.position(81, 279);
+  img.size(45,78);
 }
