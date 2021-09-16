@@ -1,9 +1,13 @@
 var medFont, regFont, semiFont;
 var arrow1;
+var image1, image2, image3;
 var icon1;
 var bar;
 var logo;
 function preload() {
+  image1 = loadImage('wash.png');
+  image2 = loadImage('breakdown.png');
+  image3 = loadImage('recycle.png');
   arrow1 = loadImage('Arrow02.png');
   icon1 = loadImage('menu.png');
   bar = loadImage('status_bar.png');
@@ -63,8 +67,8 @@ function draw() {
   image(arrow1,80,406,20,52);
   image(arrow1,80,580,20,52);
 
-  image(image1,64,323,59,60);
-  image(image2,60,514,68,24);
-  image(image3,80,668,27,61);
+  image(image1,64,308,62,70);
+  image(image2,48,490,85,64);
+  image(image3,59,661,64,57);
 
 }
