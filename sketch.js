@@ -1,8 +1,11 @@
-var medFont, regFont, semiFont;
-var image2, image3, image4, image5, image6;
-var icon1;
+var medFont, regFont, semiFont, lightFont;
+var image2, image3, image4, image5, image6
+var icon1, icon2;
 var bar;
 var logo;
+var xloc1,xloc2,xloc3;
+var xlocimg, ylocimg;
+
 function preload(){
   image2 = loadImage('takeout.png');
   image3 = loadImage('plastic.png');
@@ -10,17 +13,25 @@ function preload(){
   image5 = loadImage('paper.png');
   image6 = loadImage('batteries.png');
   icon1 = loadImage('menu.png');
+  icon2 = loadImage('close.png');
   bar = loadImage('status_bar.png');
   logo = loadImage('e-recycle.png');
   medFont = loadFont('Montserrat-Medium.ttf');
   regFont = loadFont('Montserrat-Regular.ttf');
   semiFont = loadFont('Montserrat-SemiBold.ttf');
+  lightFont = loadFont('Montserrat-Light.ttf');
 }
 
 function setup() {
   // put setup code here
   createCanvas(375, 812);
   link = createA('item.html', '');
+  link2 = createA('menu.html', '');
+  xloc1 = -375;
+  xloc2 = -350;
+  xloc3 = -344;
+  xlocimg = 81;
+  ylocimg = 279;
 }
 
 function draw() {
@@ -31,7 +42,6 @@ function draw() {
   rect(0, 0, 375, 133);
   image(bar,0,0,375,45);
   image(logo,87,75,202,28);
-  image(icon1,24,73,30,30);
 
   textSize(20)
   fill(128);
@@ -64,6 +74,10 @@ function draw() {
   text('BATTERIES', 221, 721,100,20);
 
   img = createImg('cups.png').parent(link);
-  img.position(81, 279);
+  img.position(xlocimg, ylocimg);
   img.size(45,78);
+
+  img = createImg('menu.png').parent(link2);
+  img.position(24, 73);
+  img.size(30,30);
 }
