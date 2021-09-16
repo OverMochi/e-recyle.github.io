@@ -38,7 +38,7 @@ function draw() {
   textSize(17)
   fill(128);
   textFont(semiFont);
-   text('Find trash bins near you:', 30, 170,280,22);
+  text('Find trash bins near you:', 30, 170,280,22);
 
   image(imgmap,30,210,315,508);
 
