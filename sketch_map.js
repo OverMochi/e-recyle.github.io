@@ -42,7 +42,7 @@ function draw() {
 
   image(imgmap,30,210,315,508);
 
-  img = createImg('assets/home.png').parent(link);
+  img = createImg('home.png').parent(link);
   img.position(86, 740);
   img.size(203,50);
 
