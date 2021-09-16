@@ -15,9 +15,6 @@ function preload(){
   medFont = loadFont('Montserrat-Medium.ttf');
   regFont = loadFont('Montserrat-Regular.ttf');
   semiFont = loadFont('Montserrat-SemiBold.ttf');
-  //image3 = loadImage('');
-  //image4 = loadImage('');
-  //image5 = loadImage('');
 }
 
 function setup() {
