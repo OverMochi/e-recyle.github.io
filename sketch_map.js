@@ -38,11 +38,12 @@ function draw() {
   textSize(17)
   fill(128);
   textFont(semiFont);
-  text('Find trash bins near you:', 30, 184,280,22);
+   text('Find trash bins near you:', 30, 170,280,22);
 
-  image(imgmap,30,230,315,508);
+  image(imgmap,30,210,315,508);
 
-
-
+  img = createImg('assets/home.png').parent(link);
+  img.position(86, 740);
+  img.size(203,50);
 
 }
