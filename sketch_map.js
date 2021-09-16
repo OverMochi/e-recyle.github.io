@@ -17,11 +17,6 @@ function setup() {
   // put setup code here
   createCanvas(375, 812);
   link = createA('index.html', '');
-  xloc1 = -375;
-  xloc2 = -350;
-  xloc3 = -344;
-  xlocimg = 81;
-  ylocimg = 279;
 }
 
 function draw() {
