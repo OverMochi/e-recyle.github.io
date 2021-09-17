@@ -43,7 +43,7 @@ function draw() {
   textSize(17)
   fill(128);
   textFont(medFont);
-  text('Material of each component:', 38, 217,300,22);
+  text('Step-by-step:', 38, 217,300,22);
 
   fill(255);
   ellipseMode(CORNER);
