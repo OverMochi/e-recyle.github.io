@@ -80,7 +80,7 @@ function draw() {
 
   image(icon2,xloc2,37,34,34);
 
-  textSize(17);
+  textSize(25);
   fill(0,163,153);
   textFont(lightFont);
   textAlign(LEFT);
