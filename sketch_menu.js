@@ -87,5 +87,7 @@ function draw() {
   text('Home', xloc3, 164,78,30);
   text('Our Value',xloc3, 204,130,30);
 
-  link2.position(xloc3,242);
+  img = createImg('find.png').parent(link2);
+  img.position(31, 247);
+  img.size(190,30);
 }
